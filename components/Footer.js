@@ -7,7 +7,8 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8" data-id="i641xeitt" data-path="components/Footer.js">
         <div className="xl:grid xl:grid-cols-3 xl:gap-8" data-id="apzdi42bf" data-path="components/Footer.js">
           <div className="space-y-8 xl:col-span-1" data-id="xrhe5ji7d" data-path="components/Footer.js">
-            <span className="text-3xl font-bold gradient-text" data-id="98h7fc51d" data-path="components/Footer.js">Sexy AI</span> {/* Gradient uses CSS vars, should adapt */}
+            {/* Logo - Always white */}
+            <img src="assets/flowsuite_logo_white.png" alt="Flowsuite Logo" className="h-8 w-auto logo-img" data-id="footer-logo-white" data-path="components/Footer.js" />
             <p className="text-gray-400 dark:text-gray-400 text-base mt-2" data-id="rfopl1rzn" data-path="components/Footer.js"> {/* Explicit dark color */}
               Empowering professionals to harness the power of no-code tools and AI automations without technical expertise.
             </p>

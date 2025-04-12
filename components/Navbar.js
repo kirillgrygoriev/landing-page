@@ -4,9 +4,14 @@ const Navbar = ({ toggleTheme, currentTheme }) => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           <div className="flex items-center">
-            <div className="flex-shrink-0 flex items-center">
-              <span className="text-2xl font-bold gradient-text">Sexy AI</span> {/* Gradient uses CSS vars */}
-            </div>
+            {/* Logo */}
+            <a href="/" className="flex-shrink-0 flex items-center">
+              <img
+                className="h-8 w-auto logo-img" /* Added logo-img class */
+                src={currentTheme === 'light' ? 'assets/flowsuite_logo_black.png' : 'assets/flowsuite_logo_white.png'}
+                alt="Flowsuite Logo"
+              />
+            </a>
           </div>
           <div className="flex items-center">
              {/* Gradient uses CSS vars, should adapt */}
