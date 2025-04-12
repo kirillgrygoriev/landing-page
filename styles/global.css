@@ -1,20 +1,39 @@
 /* Global Styles */
 :root {
+  /* Light theme (default) */
   --primary: #7c3aed;
   --primary-dark: #6d28d9;
   --secondary: #ec4899;
   --secondary-dark: #db2777;
-  --dark: #1f2937;
-  --light: #f3f4f6;
+  --text-color: #1f2937; /* Was --dark */
+  --bg-color: #ffffff;   /* Default background */
+  --card-bg: #f3f4f6;  /* Was --light */
+  --border-color: #e5e7eb;
   --gray: #6b7280;
+}
+
+html.dark {
+  /* Dark theme overrides */
+  --primary: #9333ea; /* Lighter purple */
+  --primary-dark: #a855f7;
+  --secondary: #f472b6; /* Lighter pink */
+  --secondary-dark: #f9a8d4;
+  --text-color: #f3f4f6; /* Light text */
+  --bg-color: #111827;   /* Dark background */
+  --card-bg: #1f2937;  /* Darker card background */
+  --border-color: #374151;
+  --gray: #9ca3af;
 }
 
 body {
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  color: var(--dark);
+  color: var(--text-color); /* Use variable */
+  background-color: var(--bg-color); /* Use variable */
   line-height: 1.6;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
 }
 
+/* Update existing rules to use variables where appropriate */
 .gradient-text {
   background-clip: text;
   -webkit-background-clip: text;
@@ -58,4 +77,9 @@ body {
 button:focus, a:focus {
   outline: 2px solid var(--primary);
   outline-offset: 2px;
+}
+
+/* Ensure components using card-bg transition smoothly */
+.card-hover, nav { /* Add other elements using card-bg if needed */
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
 }

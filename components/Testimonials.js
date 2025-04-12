@@ -27,24 +27,25 @@ const Testimonials = () => {
 
 
   return (
-    <section id="testimonials" className="py-20 bg-white" data-id="1jtkuejhs" data-path="components/Testimonials.js">
+    <section id="testimonials" className="py-20 bg-[var(--bg-color)] text-[var(--text-color)]" data-id="1jtkuejhs" data-path="components/Testimonials.js"> {/* Use CSS Variables */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" data-id="z7fzjjbep" data-path="components/Testimonials.js">
         <div className="text-center" data-id="fns00hf1l" data-path="components/Testimonials.js">
-          <h2 className="text-base font-semibold tracking-wide uppercase text-purple-600" data-id="zvvm230p1" data-path="components/Testimonials.js">Testimonials</h2>
-          <p className="mt-2 text-3xl font-extrabold text-gray-900 sm:text-4xl" data-id="w4gix3z6k" data-path="components/Testimonials.js">
+          <h2 className="text-base font-semibold tracking-wide uppercase text-[var(--primary)]" data-id="zvvm230p1" data-path="components/Testimonials.js">Testimonials</h2> {/* Use CSS Variable */}
+          <p className="mt-2 text-3xl font-extrabold sm:text-4xl" data-id="w4gix3z6k" data-path="components/Testimonials.js"> {/* Inherits text color */}
             Hear From Our Students
           </p>
-          <p className="mt-4 max-w-2xl text-xl text-gray-500 mx-auto" data-id="hdr35lvmd" data-path="components/Testimonials.js">
+          <p className="mt-4 max-w-2xl text-xl text-[var(--gray)] mx-auto" data-id="hdr35lvmd" data-path="components/Testimonials.js"> {/* Use CSS Variable */}
             Don't just take our word for it. See how this course has transformed the way our students work.
           </p>
         </div>
 
         <div className="mt-16 grid gap-8 md:grid-cols-2 lg:grid-cols-2" data-id="825tgu463" data-path="components/Testimonials.js">
           {testimonials.map((testimonial, index) =>
-          <div key={index} className="bg-gray-50 rounded-xl p-8 shadow-sm hover:shadow-md transition-all duration-300" data-id="vvsbvm1ga" data-path="components/Testimonials.js">
+          <div key={index} className="bg-[var(--card-bg)] rounded-xl p-8 shadow-sm hover:shadow-md transition-all duration-300 border border-[var(--border-color)]" data-id="vvsbvm1ga" data-path="components/Testimonials.js"> {/* Use CSS Vars & add border */}
               <div className="relative" data-id="9r722s37n" data-path="components/Testimonials.js">
-                <div className="text-gray-500" data-id="sd9li0rrb" data-path="components/Testimonials.js">
-                  <i className="fas fa-quote-left text-3xl text-purple-200 absolute -top-4 -left-2" data-id="cp0rlwvhq" data-path="components/Testimonials.js"></i>
+                <div className="text-[var(--gray)]" data-id="sd9li0rrb" data-path="components/Testimonials.js"> {/* Use CSS Variable */}
+                  {/* Use CSS variable for quote icon color */}
+                  <i className="fas fa-quote-left text-3xl text-purple-200 dark:text-[var(--primary)] absolute -top-4 -left-2 opacity-50 dark:opacity-75" data-id="cp0rlwvhq" data-path="components/Testimonials.js"></i>
                   <p className="text-lg relative z-10 italic" data-id="m1aya3sed" data-path="components/Testimonials.js">{testimonial.content}</p>
                 </div>
                 <div className="mt-6 flex items-center" data-id="y7nvdn985" data-path="components/Testimonials.js">
@@ -56,8 +57,8 @@ const Testimonials = () => {
 
                   </div>
                   <div className="ml-4" data-id="8c4tjw6ob" data-path="components/Testimonials.js">
-                    <div className="text-base font-medium text-gray-900" data-id="a2tl94zy6" data-path="components/Testimonials.js">{testimonial.author}</div>
-                    <div className="text-sm text-purple-600" data-id="icq4stk16" data-path="components/Testimonials.js">{testimonial.role}</div>
+                    <div className="text-base font-medium text-[var(--text-color)]" data-id="a2tl94zy6" data-path="components/Testimonials.js">{testimonial.author}</div> {/* Use CSS Variable */}
+                    <div className="text-sm text-[var(--primary)]" data-id="icq4stk16" data-path="components/Testimonials.js">{testimonial.role}</div> {/* Use CSS Variable */}
                   </div>
                 </div>
               </div>
@@ -66,7 +67,7 @@ const Testimonials = () => {
         </div>
 
         <div className="mt-16 text-center" data-id="f9ihz0fex" data-path="components/Testimonials.js">
-          <div className="inline-flex items-center space-x-2 text-purple-600" data-id="wd3kgqggv" data-path="components/Testimonials.js">
+          <div className="inline-flex items-center space-x-2 text-[var(--primary)]" data-id="wd3kgqggv" data-path="components/Testimonials.js"> {/* Use CSS Variable */}
             <span className="text-lg font-medium" data-id="jkmc5xsga" data-path="components/Testimonials.js">Join them and transform your workflow today</span>
             <i className="fas fa-arrow-right" data-id="lpdxd9ofn" data-path="components/Testimonials.js"></i>
           </div>

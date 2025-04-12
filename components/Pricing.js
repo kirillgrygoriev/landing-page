@@ -36,14 +36,14 @@ const Pricing = () => {
 
 
   return (
-    <section id="pricing" className="py-20 bg-gray-50" data-id="ep7ag1jkm" data-path="components/Pricing.js">
+    <section id="pricing" className="py-20 bg-[var(--card-bg)] text-[var(--text-color)]" data-id="ep7ag1jkm" data-path="components/Pricing.js"> {/* Use CSS Variables */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" data-id="u176umxbd" data-path="components/Pricing.js">
         <div className="text-center" data-id="rwz8avuvj" data-path="components/Pricing.js">
-          <h2 className="text-base font-semibold tracking-wide uppercase text-purple-600" data-id="fc4hye12u" data-path="components/Pricing.js">Pricing</h2>
-          <p className="mt-2 text-3xl font-extrabold text-gray-900 sm:text-4xl" data-id="rd8o1bamp" data-path="components/Pricing.js">
+          <h2 className="text-base font-semibold tracking-wide uppercase text-[var(--primary)]" data-id="fc4hye12u" data-path="components/Pricing.js">Pricing</h2> {/* Use CSS Variable */}
+          <p className="mt-2 text-3xl font-extrabold sm:text-4xl" data-id="rd8o1bamp" data-path="components/Pricing.js"> {/* Inherits text color */}
             Choose Your Learning Path
           </p>
-          <p className="mt-4 max-w-2xl text-xl text-gray-500 mx-auto" data-id="4zb40duco" data-path="components/Pricing.js">
+          <p className="mt-4 max-w-2xl text-xl text-[var(--gray)] mx-auto" data-id="4zb40duco" data-path="components/Pricing.js"> {/* Use CSS Variable */}
             Invest in your future with flexible pricing options designed to fit your needs.
           </p>
         </div>
@@ -52,42 +52,48 @@ const Pricing = () => {
           {pricingPlans.map((plan, index) =>
           <div
             key={index}
-            className={`relative rounded-2xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl transform hover:-translate-y-1 ${
-            plan.mostPopular ? 'border-2 border-purple-500' : 'border border-gray-200'}`
+            className={`relative rounded-2xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl transform hover:-translate-y-1 border ${
+            plan.mostPopular ? 'border-2 border-[var(--primary)]' : 'border-[var(--border-color)]'}` // Use CSS Vars for borders
             } data-id="9b7ry35pd" data-path="components/Pricing.js">
 
               {plan.mostPopular &&
             <div className="absolute top-0 inset-x-0 transform translate-y-px" data-id="p0ph93l7m" data-path="components/Pricing.js">
                   <div className="flex justify-center transform -translate-y-1/2" data-id="jchmko6wb" data-path="components/Pricing.js">
-                    <span className="inline-flex rounded-full bg-gradient-to-r from-purple-600 to-pink-500 px-4 py-1 text-sm font-semibold tracking-wider uppercase text-white" data-id="sa058f9z9" data-path="components/Pricing.js">
+                    {/* Use CSS variables for the gradient */}
+                    <span className="inline-flex rounded-full bg-gradient-to-r from-[var(--primary)] to-[var(--secondary)] px-4 py-1 text-sm font-semibold tracking-wider uppercase text-white" data-id="sa058f9z9" data-path="components/Pricing.js">
                       Most Popular
                     </span>
                   </div>
                 </div>
             }
-              <div className="bg-white p-8" data-id="ptxqpintr" data-path="components/Pricing.js">
+              <div className="bg-[var(--bg-color)] p-8" data-id="ptxqpintr" data-path="components/Pricing.js"> {/* Use CSS Variable */}
                 <div className="flex items-center justify-between" data-id="jkgubyvax" data-path="components/Pricing.js">
-                  <h3 className="text-2xl font-bold text-gray-900" data-id="tixl3rqd0" data-path="components/Pricing.js">{plan.name}</h3>
+                  <h3 className="text-2xl font-bold text-[var(--text-color)]" data-id="tixl3rqd0" data-path="components/Pricing.js">{plan.name}</h3> {/* Use CSS Variable */}
                   <p className="flex items-baseline" data-id="9300emec1" data-path="components/Pricing.js">
-                    <span className="text-5xl font-extrabold tracking-tight text-gray-900" data-id="2tg2laf2i" data-path="components/Pricing.js">{plan.price}</span>
+                    <span className="text-5xl font-extrabold tracking-tight text-[var(--text-color)]" data-id="2tg2laf2i" data-path="components/Pricing.js">{plan.price}</span> {/* Use CSS Variable */}
                   </p>
                 </div>
-                <p className="mt-4 text-base text-gray-500" data-id="41ryxxwzv" data-path="components/Pricing.js">{plan.description}</p>
+                <p className="mt-4 text-base text-[var(--gray)]" data-id="41ryxxwzv" data-path="components/Pricing.js">{plan.description}</p> {/* Use CSS Variable */}
                 <ul className="mt-6 space-y-4" data-id="iaa852naj" data-path="components/Pricing.js">
                   {plan.features.map((feature, featureIndex) =>
                 <li key={featureIndex} className="flex" data-id="9euuw0cf0" data-path="components/Pricing.js">
-                      <i className="fas fa-check-circle flex-shrink-0 text-green-500 mt-1" data-id="1fhj0npmr" data-path="components/Pricing.js"></i>
-                      <span className="ml-3 text-base text-gray-500" data-id="ibn5dku20" data-path="components/Pricing.js">{feature}</span>
+                      <i className="fas fa-check-circle flex-shrink-0 text-green-500 dark:text-green-400 mt-1" data-id="1fhj0npmr" data-path="components/Pricing.js"></i> {/* Keep dark variant for specific color */}
+                      <span className="ml-3 text-base text-[var(--gray)]" data-id="ibn5dku20" data-path="components/Pricing.js">{feature}</span> {/* Use CSS Variable */}
                     </li>
                 )}
                 </ul>
                 <div className="mt-8" data-id="jksg0il5z" data-path="components/Pricing.js">
+                  {/* Use CSS variables for button styling where possible */}
                   <button
-                  className={`w-full px-4 py-3 border rounded-md shadow-sm text-base font-medium ${plan.buttonClass} focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-500`} data-id="u4bwyzixd" data-path="components/Pricing.js">
+                  className={`w-full px-4 py-3 border rounded-md shadow-sm text-base font-medium 
+                             ${plan.mostPopular 
+                               ? 'bg-gradient-to-r from-[var(--primary)] to-[var(--secondary)] text-white border-transparent' 
+                               : 'bg-[var(--bg-color)] text-[var(--primary)] border-[var(--primary)] hover:bg-[var(--card-bg)]'} 
+                             focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[var(--primary)]`} data-id="u4bwyzixd" data-path="components/Pricing.js">
                     {plan.buttonText}
                   </button>
                 </div>
-                <p className="mt-4 text-xs text-center text-gray-500" data-id="8t2yrkye6" data-path="components/Pricing.js">
+                <p className="mt-4 text-xs text-center text-[var(--gray)]" data-id="8t2yrkye6" data-path="components/Pricing.js"> {/* Use CSS Variable */}
                   30-day money-back guarantee
                 </p>
               </div>
@@ -95,20 +101,20 @@ const Pricing = () => {
           )}
         </div>
         
-        <div className="mt-16 bg-white rounded-lg shadow-md max-w-4xl mx-auto" data-id="5tqkj4zyk" data-path="components/Pricing.js">
+        <div className="mt-16 bg-[var(--bg-color)] rounded-lg shadow-md max-w-4xl mx-auto border border-[var(--border-color)]" data-id="5tqkj4zyk" data-path="components/Pricing.js"> {/* Use CSS Vars & add border */}
           <div className="px-6 py-8 md:p-10 lg:p-12" data-id="vgr6c3tb2" data-path="components/Pricing.js">
-            <h3 className="text-2xl font-medium text-gray-900 text-center" data-id="dnkj26psy" data-path="components/Pricing.js">
+            <h3 className="text-2xl font-medium text-[var(--text-color)] text-center" data-id="dnkj26psy" data-path="components/Pricing.js"> {/* Use CSS Variable */}
               Team or Enterprise Discount
             </h3>
             <div className="mt-4 text-center" data-id="bjke134bp" data-path="components/Pricing.js">
-              <p className="text-lg text-gray-500" data-id="1mzzvweds" data-path="components/Pricing.js">
+              <p className="text-lg text-[var(--gray)]" data-id="1mzzvweds" data-path="components/Pricing.js"> {/* Use CSS Variable */}
                 Looking to train your team? Get special pricing for groups of 5 or more.
               </p>
             </div>
             <div className="mt-6 flex items-center justify-center" data-id="8xtyb6taa" data-path="components/Pricing.js">
               <a
                 href="#"
-                className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-purple-700 bg-purple-100 hover:bg-purple-200" data-id="uxjmhk8pd" data-path="components/Pricing.js">
+                className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-[var(--primary)] bg-[var(--card-bg)] hover:bg-[var(--border-color)]" data-id="uxjmhk8pd" data-path="components/Pricing.js"> {/* Use CSS Variables */}
 
                 Contact for Team Pricing
               </a>
