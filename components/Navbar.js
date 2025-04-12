@@ -20,7 +20,7 @@ const Navbar = ({ toggleTheme, currentTheme }) => {
             </a>
             <button
               onClick={toggleTheme}
-              className="p-2 rounded-md text-[var(--text-color)] bg-[var(--bg-color)] hover:bg-[var(--card-bg)] transition-colors duration-300 border border-[var(--border-color)]"
+              className="p-2 rounded-md text-[var(--text-color)] bg-[var(--bg-color)] hover:bg-[var(--card-bg)] transition-colors duration-300 border border-[var(--primary)]"
               aria-label={`Switch to ${currentTheme === 'light' ? 'dark' : 'light'} mode`}
             >
               {currentTheme === 'light' ? (
