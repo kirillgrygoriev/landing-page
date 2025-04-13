@@ -16,7 +16,7 @@ const Navbar = ({ toggleTheme, currentTheme }) => {
           <div className="flex items-center">
              {/* Gradient uses CSS vars, should adapt */}
             <a href="#pricing" className="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-gradient-to-r from-[var(--primary)] to-[var(--secondary)] hover:opacity-90 button-primary mr-4">
-              Почати Навчання
+              Почати Навчання зі Знижкою -93%
             </a>
             <button
               onClick={toggleTheme}
