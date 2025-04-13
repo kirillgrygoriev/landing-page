@@ -33,7 +33,7 @@ const WhoIsThisFor = () => {
       React.createElement('div', { className: 'container mx-auto px-4' },
         React.createElement('div', { className: 'text-center mb-12 md:mb-16' },
           React.createElement('h2', { className: 'text-3xl md:text-4xl font-bold text-gray-900 dark:text-white' },
-            'ЦЕЙ КУРС ДЛЯ ТЕБЕ, ЯКЩО ТИ:'
+            'Цей курс для тебе, якщо ти:'
           )
         ),
         React.createElement('div', { className: 'grid grid-cols-1 gap-6 max-w-3xl mx-auto' }, // Reduced gap slightly
