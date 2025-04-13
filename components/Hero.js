@@ -63,7 +63,7 @@ const Hero = ({ toggleTheme, currentTheme }) => { // Accept props
 
 
   return (
-    <div className="relative overflow-hidden pb-16 sm:pb-24 bg-[var(--bg-color)] text-[var(--text-color)]" data-id="in6ec1gsy" data-path="components/Hero.js"> {/* Removed top padding */}
+    <div className="relative overflow-hidden bg-[var(--bg-color)] text-[var(--text-color)]" data-id="in6ec1gsy" data-path="components/Hero.js"> {/* Removed top and bottom padding */}
 
       <div className="hidden sm:block sm:absolute sm:inset-0" aria-hidden="true" data-id="mu9zjopzn" data-path="components/Hero.js">
         <svg className="absolute bottom-0 right-0 transform translate-x-1/2 mb-48 text-gray-200 dark:text-gray-700 lg:top-0 lg:mt-28 lg:mb-0 xl:transform-none xl:translate-x-0" width="364" height="384" viewBox="0 0 364 384" fill="none" data-id="m7ejnog6x" data-path="components/Hero.js"> {/* Keep dark variant for subtle pattern */}
@@ -76,7 +76,7 @@ const Hero = ({ toggleTheme, currentTheme }) => { // Accept props
         </svg>
       </div>
       {/* Removed pt-6 from here */}
-      <div className="relative pb-16 sm:pb-24" data-id="z4r4gpprv" data-path="components/Hero.js">
+      <div className="relative pb-16" data-id="z4r4gpprv" data-path="components/Hero.js"> {/* Changed pb-12 to pb-16 */}
          {/* Moved Description/Button container here, wrapped for alignment */}
          <div className="mx-auto max-w-7xl px-4 sm:px-6 pt-6" data-id="top-bar-container"> {/* Added pt-6 here */}
            <div className="flex items-start justify-between" data-id="desc-button-container">
@@ -148,7 +148,7 @@ const Hero = ({ toggleTheme, currentTheme }) => { // Accept props
                     </div>
                      {/* Restored Offer Text */}
                      <p className="mt-3 text-sm text-[var(--gray)]" data-id="offer-text-restored">
-                       Пропозиція діє до кінця доби.
+                       Спеціальна пропозиція діє лише сьогодні до кінця дня.
                      </p>
                   </div>
                 </div>
