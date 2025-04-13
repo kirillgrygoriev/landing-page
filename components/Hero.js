@@ -81,8 +81,8 @@ const Hero = ({ toggleTheme, currentTheme }) => { // Accept props
          <div className="mx-auto max-w-7xl px-4 sm:px-6 pt-6" data-id="top-bar-container"> {/* Added pt-6 here */}
            <div className="flex items-start justify-between" data-id="desc-button-container">
              {/* Course Description and Date - Styled */}
-             <p className="text-sm font-semibold uppercase tracking-wider" data-id="course-desc-date">
-               <span className="text-[#1f2938] dark:text-gray-300">Практичний міні-курс по застосуванню No-code та AI інструментів |</span> <span className="text-[var(--primary)]">СТАРТ {startDate}</span>
+             <p className="text-sm font-semibold uppercase tracking-wider" data-id="course-desc-date"> {/* Remove text color from p */}
+               <span>Практичний міні-курс по застосуванню No-code та AI інструментів |</span> <span className="text-[var(--primary)]">СТАРТ {startDate}</span> {/* Remove dark:text-white from span */}
              </p>
              {/* Dark Mode Toggle Button - In Flow */}
              <button
