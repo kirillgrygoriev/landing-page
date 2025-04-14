@@ -184,7 +184,7 @@ const Hero = ({ toggleTheme, currentTheme }) => { // Accept props
 
        {/* Sticky Bottom CTA Button */}
        <div className={`fixed bottom-5 left-1/2 transform -translate-x-1/2 z-50 transition-opacity duration-300 ${isStickyVisible ? 'opacity-100' : 'opacity-0 pointer-events-none'}`} data-id="sticky-cta">
-         <a href="#pricing" className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-full shadow-lg text-white bg-gradient-to-r from-purple-600 to-pink-500 hover:from-purple-700 hover:to-pink-600 button-primary">
+         <a href="#pricing" className="inline-flex items-center justify-center w-[90vw] max-w-[400px] px-4 py-3 md:py-4 md:px-10 border border-transparent text-base md:text-lg font-medium rounded-full shadow-lg text-white bg-gradient-to-r from-purple-600 to-pink-500 hover:from-purple-700 hover:to-pink-600 button-primary whitespace-nowrap">
            Отримати доступ зі знижкою -93%
          </a>
        </div>
