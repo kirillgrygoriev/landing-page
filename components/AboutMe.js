@@ -97,7 +97,12 @@ const AboutMe = () => {
                 <div className="mt-6 bg-[var(--card-bg)] p-6 rounded-lg shadow-md border border-[var(--border-color)]">
                   <div className="flex items-center">
                     <div className="flex-shrink-0">
-                      <i className="fas fa-certificate text-[var(--primary)] text-2xl"></i>
+                      {/*<i className="fas fa-certificate text-[var(--primary)] text-2xl"></i>*/}
+                      <img 
+                        src="assets/verified-ambassador-badge.svg" 
+                        alt="ClickUp Ambassador Badge" 
+                        className="h-25 w-auto flex-shrink-0"
+                      />
                     </div>
                     <div className="ml-4">
                       <p className="text-lg font-medium text-[var(--text-color)]">Сертифікований експерт</p>
