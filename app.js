@@ -55,9 +55,9 @@ const App = () => {
       <WhoIsThisFor data-id="w1t4f9x2k" data-path="app.js" />
       <AboutMe /> 
       <CourseContent /> 
-      <Features data-id="qnpw4cl3h" data-path="app.js" />
-      <CourseDetails data-id="a6n3vzfh5" data-path="app.js" />
       <Testimonials data-id="f2blngy77" data-path="app.js" />
+      <CourseDetails data-id="a6n3vzfh5" data-path="app.js" />
+      <Features data-id="qnpw4cl3h" data-path="app.js" />
       <Pricing openPopup={openPopup} data-id="rvcwf00fd" data-path="app.js" />
       <FAQ data-id="r5fy1gga6" data-path="app.js" />
       <Footer data-id="sk8nyusg2" data-path="app.js" />
