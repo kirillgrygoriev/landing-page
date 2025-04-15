@@ -1,4 +1,4 @@
-const Hero = ({ toggleTheme, currentTheme }) => { // Accept props
+const Hero = ({ toggleTheme, currentTheme, openPopup }) => { // Accept props
 
   // --- State for Countdown Timer ---
   const [timeLeft, setTimeLeft] = React.useState({ hours: '00', minutes: '00', seconds: '00' });
@@ -141,7 +141,15 @@ const Hero = ({ toggleTheme, currentTheme }) => { // Accept props
 
                       {/* Single CTA Button - Below Price/Countdown */}
                       <div className="rounded-md shadow w-full mt-4" data-id="sx5axcpkl-modified"> {/* Added margin-top */}
-                        <a href="#pricing" className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-gradient-to-r from-purple-600 to-pink-500 hover:from-purple-700 hover:to-pink-600 md:py-4 md:text-lg md:px-10 button-primary" data-id="ejh5chd0f-modified">
+                        <a 
+                          onClick={(e) => {
+                            e.preventDefault();
+                            openPopup();
+                          }}
+                          href="#" 
+                          className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-gradient-to-r from-purple-600 to-pink-500 hover:from-purple-700 hover:to-pink-600 md:py-4 md:text-lg md:px-10 button-primary" 
+                          data-id="ejh5chd0f-modified"
+                        >
                           Отримати доступ зі знижкою -93%
                         </a>
                       </div>
@@ -184,7 +192,14 @@ const Hero = ({ toggleTheme, currentTheme }) => { // Accept props
 
        {/* Sticky Bottom CTA Button */}
        <div className={`fixed bottom-5 left-1/2 transform -translate-x-1/2 z-50 transition-opacity duration-300 ${isStickyVisible ? 'opacity-100' : 'opacity-0 pointer-events-none'}`} data-id="sticky-cta">
-         <a href="#pricing" className="inline-flex items-center justify-center w-[90vw] max-w-[400px] px-4 py-3 md:py-4 md:px-10 border border-transparent text-base md:text-lg font-medium rounded-full shadow-lg text-white bg-gradient-to-r from-purple-600 to-pink-500 hover:from-purple-700 hover:to-pink-600 button-primary whitespace-nowrap">
+         <a 
+          onClick={(e) => {
+            e.preventDefault();
+            openPopup();
+          }}
+          href="#pricing" 
+          className="inline-flex items-center justify-center w-[90vw] max-w-[400px] px-4 py-3 md:py-4 md:px-10 border border-transparent text-base md:text-lg font-medium rounded-full shadow-lg text-white bg-gradient-to-r from-purple-600 to-pink-500 hover:from-purple-700 hover:to-pink-600 button-primary whitespace-nowrap"
+         >
            Отримати доступ зі знижкою -93%
          </a>
        </div>

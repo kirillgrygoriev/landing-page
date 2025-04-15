@@ -119,3 +119,26 @@ html.dark #who-is-this-for .card-hover strong {
    /* Consider a slightly brighter color if --text-color isn't distinct enough */
    /* color: #e5e7eb; /* Example: Slightly brighter gray */
 }
+
+/* Popup animation styles */
+.popup-overlay {
+  animation: fadeIn 0.3s ease forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Prevent body scroll when popup is open */
+body.popup-open {
+  overflow: hidden;
+}
+
+/* Popup mobile responsiveness */
+@media (max-width: 640px) {
+  .popup-overlay > div {
+    width: 95%;
+    margin: 0 10px;
+  }
+}
