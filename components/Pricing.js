@@ -1,4 +1,4 @@
-const Pricing = () => {
+const Pricing = ({ openPopup }) => {
   const pricingPlans = [
   {
     name: "Self-Paced",
@@ -85,6 +85,7 @@ const Pricing = () => {
                 <div className="mt-8" data-id="jksg0il5z" data-path="components/Pricing.js">
                   {/* Use CSS variables for button styling where possible */}
                   <button
+                  onClick={openPopup}
                   className={`w-full px-4 py-3 border rounded-md shadow-sm text-base font-medium 
                              ${plan.mostPopular 
                                ? 'bg-gradient-to-r from-[var(--primary)] to-[var(--secondary)] text-white border-transparent' 
