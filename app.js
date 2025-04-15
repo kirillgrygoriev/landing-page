@@ -54,6 +54,7 @@ const App = () => {
       <Hero toggleTheme={toggleTheme} currentTheme={theme} openPopup={openPopup} data-id="8h6ibw3f3" data-path="app.js" />
       <WhoIsThisFor data-id="w1t4f9x2k" data-path="app.js" />
       <AboutMe /> 
+      <CourseContent /> 
       <Features data-id="qnpw4cl3h" data-path="app.js" />
       <CourseDetails data-id="a6n3vzfh5" data-path="app.js" />
       <Testimonials data-id="f2blngy77" data-path="app.js" />
