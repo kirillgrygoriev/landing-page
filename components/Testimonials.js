@@ -1,28 +1,36 @@
-const Testimonials = () => {
+const Testimonials = ({ openPopup }) => {
   const testimonials = [
   {
-    content: "This course completely transformed how I approach my work. I've automated 70% of my repetitive tasks using the techniques I learned, saving me hours every week.",
-    author: "Sarah Johnson",
-    role: "Marketing Director",
-    avatar: "https://randomuser.me/api/portraits/women/32.jpg"
+    /*test: "assets/example_of_testimonial_1.jpg" */
+    /* content: "This course completely transformed how I approach my work. I've automated 70% of my repetitive tasks using the techniques I learned, saving me hours every week.", */
+    screenshotSrc: "assets/testimonials/example_of_testimonial_1.jpg",
+    author: "Олексій Колесніков",
+    role: "Manual QA Engineer",
+    avatar: "assets/testimonials/avatar_1.jpeg"
   },
   {
-    content: "As someone with zero coding background, I was skeptical at first. But the step-by-step approach made it incredibly easy to follow along and build real applications.",
-    author: "Michael Chen",
-    role: "Operations Manager",
-    avatar: "https://randomuser.me/api/portraits/men/44.jpg"
+    /*test: "assets/example_of_testimonial_2.jpg" */
+    // content: "As someone with zero coding background, I was skeptical at first. But the step-by-step approach made it incredibly easy to follow along and build real applications.",
+    screenshotSrc: "assets/testimonials/example_of_testimonial_2.jpg",
+    author: "Вадим Смолкін",
+    role: "Head of Data Analytics Department",
+    avatar: "assets/testimonials/avatar_2.jpeg"
   },
   {
-    content: "The AI integration section alone was worth the price of admission. I've built a custom AI assistant that handles customer queries, saving my team countless hours.",
-    author: "Elena Rodriguez",
-    role: "Customer Success Lead",
-    avatar: "https://randomuser.me/api/portraits/women/68.jpg"
+    /*test: "assets/example_of_testimonial_3.jpg" */
+    // content: "The AI integration section alone was worth the price of admission. I've built a custom AI assistant that handles customer queries, saving my team countless hours.",
+    screenshotSrc: "assets/testimonials/example_of_testimonial_3.jpg",
+    author: "Ангеліна Стинич",
+    role: "Executive Assistant",
+    avatar: "assets/testimonials/avatar_3.jpeg"
   },
   {
-    content: "I've taken several no-code courses before, but none were as comprehensive or practical as this one. The real-world applications make all the difference.",
-    author: "David Patel",
-    role: "Startup Founder",
-    avatar: "https://randomuser.me/api/portraits/men/75.jpg"
+    /*test: "assets/example _of_testimonial_4.jpg" */
+    // content: "I've taken several no-code courses before, but none were as comprehensive or practical as this one. The real-world applications make all the difference.",
+    screenshotSrc: "assets/testimonials/example_of_testimonial_4.jpg",
+    author: "Анастасія Григор'єва",
+    role: "Founder & CEO at LeBoxiq",
+    avatar: "assets/testimonials/avatar_4.jpeg"
   }];
 
 
@@ -30,12 +38,11 @@ const Testimonials = () => {
     <section id="testimonials" className="py-20 bg-[var(--bg-color)] text-[var(--text-color)]" data-id="1jtkuejhs" data-path="components/Testimonials.js"> {/* Use CSS Variables */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" data-id="z7fzjjbep" data-path="components/Testimonials.js">
         <div className="text-center" data-id="fns00hf1l" data-path="components/Testimonials.js">
-          <h2 className="text-base font-semibold tracking-wide uppercase text-[var(--primary)]" data-id="zvvm230p1" data-path="components/Testimonials.js">Testimonials</h2> {/* Use CSS Variable */}
-          <p className="mt-2 text-3xl font-extrabold sm:text-4xl" data-id="w4gix3z6k" data-path="components/Testimonials.js"> {/* Inherits text color */}
-            Hear From Our Students
-          </p>
+          <h2 className="mt-2 text-3xl font-extrabold sm:text-4xl" data-id="w4gix3z6k" data-path="components/Testimonials.js"> {/* Inherits text color */}
+            Відгуки про курс
+          </h2>
           <p className="mt-4 max-w-2xl text-xl text-[var(--gray)] mx-auto" data-id="hdr35lvmd" data-path="components/Testimonials.js"> {/* Use CSS Variable */}
-            Don't just take our word for it. See how this course has transformed the way our students work.
+            Що говорять ті, хто вже пройшов навчання
           </p>
         </div>
 
@@ -43,11 +50,13 @@ const Testimonials = () => {
           {testimonials.map((testimonial, index) =>
           <div key={index} className="bg-[var(--card-bg)] rounded-xl p-8 shadow-sm hover:shadow-md transition-all duration-300 border border-[var(--border-color)]" data-id="vvsbvm1ga" data-path="components/Testimonials.js"> {/* Use CSS Vars & add border */}
               <div className="relative" data-id="9r722s37n" data-path="components/Testimonials.js">
-                <div className="text-[var(--gray)]" data-id="sd9li0rrb" data-path="components/Testimonials.js"> {/* Use CSS Variable */}
-                  {/* Use CSS variable for quote icon color */}
-                  <i className="fas fa-quote-left text-3xl text-purple-200 dark:text-[var(--primary)] absolute -top-4 -left-2 opacity-50 dark:opacity-75" data-id="cp0rlwvhq" data-path="components/Testimonials.js"></i>
-                  <p className="text-lg relative z-10 italic" data-id="m1aya3sed" data-path="components/Testimonials.js">{testimonial.content}</p>
-                </div>
+              <div className="mb-4">
+                <img 
+                  src={testimonial.screenshotSrc}
+                  alt={`Feedback from ${testimonial.author}`}
+                  className="w-full rounded-lg shadow-sm"
+                />
+              </div>
                 <div className="mt-6 flex items-center" data-id="y7nvdn985" data-path="components/Testimonials.js">
                   <div className="flex-shrink-0" data-id="zqq0jwmwl" data-path="components/Testimonials.js">
                     <img
@@ -67,10 +76,13 @@ const Testimonials = () => {
         </div>
 
         <div className="mt-16 text-center" data-id="f9ihz0fex" data-path="components/Testimonials.js">
-          <div className="inline-flex items-center space-x-2 text-[var(--primary)]" data-id="wd3kgqggv" data-path="components/Testimonials.js"> {/* Use CSS Variable */}
-            <span className="text-lg font-medium" data-id="jkmc5xsga" data-path="components/Testimonials.js">Join them and transform your workflow today</span>
-            <i className="fas fa-arrow-right" data-id="lpdxd9ofn" data-path="components/Testimonials.js"></i>
-          </div>
+          <button 
+            onClick={openPopup}
+            className="inline-flex items-center space-x-2 text-[var(--primary)] cursor-pointer hover:underline focus:outline-none transition-all duration-300"
+          >
+            <span className="text-lg font-medium">Приєднуйся до них і зміни свій підіхід до роботи сьогодні</span>
+            <i className="fas fa-arrow-right ml-2"></i>
+          </button>
         </div>
       </div>
     </section>);
