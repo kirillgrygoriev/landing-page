@@ -4,7 +4,7 @@ const CourseContent = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h2 className="mt-2 text-3xl font-extrabold sm:text-4xl">
-              З ЧОГО СКЛАДАЄТЬСЯ КУРС
+              З чого складається курс
             </h2>
             <p className="mt-4 max-w-2xl text-xl text-[var(--gray)] mx-auto">
               Подорож, яка трансформує твій підхід до роботи

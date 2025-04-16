@@ -158,3 +158,16 @@ body.popup-open {
 html.dark #course-content .bg-amber-300 {
   color: #1a202c; /* Dark text for better contrast on amber background */
 }
+
+/* Testimonial screenshot styling */
+#testimonials .rounded-xl img {
+  max-width: 100%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid var(--border-color);
+}
+
+/* Optional: Add hover effect to screenshots */
+#testimonials .rounded-xl:hover {
+  transform: translateY(-2px);
+  transition: transform 0.3s ease;
+}
