@@ -72,10 +72,9 @@ const CourseDetails = () => {
     <section id="curriculum" className="py-20 bg-[var(--card-bg)] text-[var(--text-color)]" data-id="1b1hu14le" data-path="components/CourseDetails.js"> {/* Use CSS Variables */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" data-id="jfama0ur0" data-path="components/CourseDetails.js">
         <div className="text-center" data-id="tai82edto" data-path="components/CourseDetails.js">
-          <h2 className="text-base font-semibold tracking-wide uppercase text-[var(--primary)]" data-id="14lj7hdtj" data-path="components/CourseDetails.js">Curriculum</h2> {/* Use CSS Variable */}
-          <p className="mt-2 text-3xl font-extrabold sm:text-4xl" data-id="hgl1y5jz4" data-path="components/CourseDetails.js"> {/* Inherits text color */}
+          <h2 className="mt-2 text-3xl font-extrabold sm:text-4xl" data-id="hgl1y5jz4" data-path="components/CourseDetails.js"> {/* Inherits text color */}
             Course Modules
-          </p>
+          </h2>
           <p className="mt-4 max-w-2xl text-xl text-[var(--gray)] mx-auto" data-id="7ms3i86w1" data-path="components/CourseDetails.js"> {/* Use CSS Variable */}
             A comprehensive curriculum designed to take you from beginner to expert in no-code development and AI automation.
           </p>
