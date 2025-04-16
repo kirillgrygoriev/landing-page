@@ -17,7 +17,7 @@ const CourseContent = () => {
               {/* Left message bubbles */}
               <div className="flex flex-col space-y-4 sm:space-y-6">
                 {/* Message bubble 1 */}
-                <div className="bg-[var(--bg-color)] p-5 rounded-2xl rounded-tl-md shadow-md max-w-[80%] sm:max-w-[70%] border border-[var(--border-color)] self-start">
+                <div className="bg-[var(--bg-color)] p-5 rounded-2xl rounded-tl-md shadow-md max-w-[80%] sm:max-w-[70%] border border-[var(--border-color)] self-start card-hover">
                   <p className="text-[var(--text-color) font-bold">
                     7 основних модулів + 1 бонусний
                   </p>
@@ -27,7 +27,7 @@ const CourseContent = () => {
                 </div>
                 
                 {/* Message bubble 2 */}
-                <div className="bg-[var(--bg-color)] p-5 rounded-2xl rounded-tl-md shadow-md max-w-[80%] sm:max-w-[70%] border border-[var(--border-color)] self-start">
+                <div className="bg-[var(--bg-color)] p-5 rounded-2xl rounded-tl-md shadow-md max-w-[80%] sm:max-w-[70%] border border-[var(--border-color)] self-start card-hover">
                   <p className="text-[var(--text-color)] font-bold">
                     12 відеоуроків + 1 бонусний
                   </p>
@@ -37,7 +37,7 @@ const CourseContent = () => {
                 </div>
                 
                 {/* Message bubble 3 */}
-                <div className="bg-[var(--bg-color)] p-5 rounded-2xl rounded-tl-md shadow-md max-w-[80%] sm:max-w-[70%] border border-[var(--border-color)] self-start">
+                <div className="bg-[var(--bg-color)] p-5 rounded-2xl rounded-tl-md shadow-md max-w-[80%] sm:max-w-[70%] border border-[var(--border-color)] self-start card-hover">
                   <p className="text-[var(--text-color)] font-bold">
                     15-40 хвилин
                   </p>
@@ -47,7 +47,7 @@ const CourseContent = () => {
                 </div>
                 
                 {/* Message bubble 4 */}
-                <div className="bg-[var(--bg-color)] p-5 rounded-2xl rounded-tl-md shadow-md max-w-[80%] sm:max-w-[70%] border border-[var(--border-color)] self-start">
+                <div className="bg-[var(--bg-color)] p-5 rounded-2xl rounded-tl-md shadow-md max-w-[80%] sm:max-w-[70%] border border-[var(--border-color)] self-start card-hover">
                   <p className="text-[var(--text-color)] font-bold">
                     Баланс практики і теорії
                   </p>
@@ -57,7 +57,7 @@ const CourseContent = () => {
                 </div>
                 
                 {/* Message bubble 5 */}
-                <div className="bg-[var(--bg-color)] p-5 rounded-2xl rounded-tl-md shadow-md max-w-[80%] sm:max-w-[70%] border border-[var(--border-color)] self-start">
+                <div className="bg-[var(--bg-color)] p-5 rounded-2xl rounded-tl-md shadow-md max-w-[80%] sm:max-w-[70%] border border-[var(--border-color)] self-start card-hover">
                   <p className="text-[var(--text-color)] font-bold">
                     Щодня новий модуль
                   </p>
@@ -67,7 +67,7 @@ const CourseContent = () => {
                 </div>
                 
                 {/* Message bubble 6 */}
-                <div className="bg-[var(--bg-color)] p-5 rounded-2xl rounded-tl-md shadow-md max-w-[80%] sm:max-w-[70%] border border-[var(--border-color)] self-start">
+                <div className="bg-[var(--bg-color)] p-5 rounded-2xl rounded-tl-md shadow-md max-w-[80%] sm:max-w-[70%] border border-[var(--border-color)] self-start card-hover">
                   <p className="text-[var(--text-color)] font-bold">
                     Ти не просто дивишся — ти створюєш свою систему паралельно з навчанням!
                   </p>
@@ -77,7 +77,7 @@ const CourseContent = () => {
                 </div>
                 
                 {/* Message bubble 7 */}
-                <div className="bg-[var(--bg-color)] p-5 rounded-2xl rounded-tl-md shadow-md max-w-[80%] sm:max-w-[70%] border border-[var(--border-color)] self-start">
+                <div className="bg-[var(--bg-color)] p-5 rounded-2xl rounded-tl-md shadow-md max-w-[80%] sm:max-w-[70%] border border-[var(--border-color)] self-start card-hover">
                   <p className="text-[var(--text-color)] font-bold">
                     Тільки конкретні кроки та інструменти, які ти зможеш одразу застосувати:
                   </p>
@@ -96,9 +96,9 @@ const CourseContent = () => {
                 </div>
               </div>
               
-              {/* Yellow highlighted message - right side */}
+              {/* Violet highlighted message - right side */}
               <div className="flex justify-end mt-8">
-                <div className="bg-[var(--primary)] p-6 rounded-2xl rounded-tr-md shadow-md max-w-[90%] sm:max-w-[75%] border border-[var(--primary)]">
+                <div className="bg-[var(--primary)] p-6 rounded-2xl rounded-tr-md shadow-md max-w-[90%] sm:max-w-[75%] border border-[var(--primary)] card-hover">
                   <p className="text-white font-bold">
                     Ще кілька важливих деталей:
                   </p>

@@ -91,7 +91,7 @@ const CourseDetails = () => {
 
 
   return (
-    <section id="curriculum" className="py-20 bg-[var(--card-bg)] text-[var(--text-color)]" data-id="1b1hu14le" data-path="components/CourseDetails.js"> {/* Use CSS Variables */}
+    <section id="curriculum" className="py-20 bg-[var(--bg-color)] text-[var(--text-color)]" data-id="1b1hu14le" data-path="components/CourseDetails.js"> {/* Use CSS Variables */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" data-id="jfama0ur0" data-path="components/CourseDetails.js">
         <div className="text-center" data-id="tai82edto" data-path="components/CourseDetails.js">
           <h2 className="mt-2 text-3xl font-extrabold sm:text-4xl" data-id="hgl1y5jz4" data-path="components/CourseDetails.js"> {/* Inherits text color */}
@@ -104,7 +104,7 @@ const CourseDetails = () => {
 
         <div className="mt-16 space-y-12 lg:space-y-0 lg:grid lg:grid-cols-2 lg:gap-x-8 lg:gap-y-12" data-id="zvdq6ux8a" data-path="components/CourseDetails.js">
           {modules.map((module, index) =>
-          <div key={index} className="relative p-8 bg-[var(--bg-color)] rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 border border-[var(--border-color)]" data-id="6yuhv4r9g" data-path="components/CourseDetails.js"> {/* Use CSS Vars & add border */}
+          <div key={index} className="relative p-8 bg-[var(--card-bg)] rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 border border-[var(--border-color)]" data-id="6yuhv4r9g" data-path="components/CourseDetails.js"> {/* Use CSS Vars & add border */}
               {/* Gradient uses CSS vars, should adapt */}
               <div className="absolute -top-8 -left-0.2 h-16 px-6 rounded-full bg-gradient-to-r from-[var(--primary)] to-[var(--secondary)] flex items-center justify-center text-white font-bold text-xl shadow-lg">
                 <span>Модуль {module.number}</span>
