@@ -1,7 +1,7 @@
 const CourseDetails = () => {
   const modules = [
   {
-    number: "01",
+    number: "1",
     title: "Foundations of No-Code Development",
     description: "Understand the no-code revolution and discover the best tools for different use cases.",
     lessons: [
@@ -12,7 +12,7 @@ const CourseDetails = () => {
 
   },
   {
-    number: "02",
+    number: "2",
     title: "AI Basics for Automation",
     description: "Learn how AI can be leveraged to automate tasks without technical expertise.",
     lessons: [
@@ -23,7 +23,7 @@ const CourseDetails = () => {
 
   },
   {
-    number: "03",
+    number: "3",
     title: "Building Automated Workflows",
     description: "Create end-to-end workflows that run on autopilot and save you hours every week.",
     lessons: [
@@ -34,7 +34,7 @@ const CourseDetails = () => {
 
   },
   {
-    number: "04",
+    number: "4",
     title: "Advanced No-Code Applications",
     description: "Take your skills to the next level by building sophisticated applications without coding.",
     lessons: [
@@ -45,7 +45,7 @@ const CourseDetails = () => {
 
   },
   {
-    number: "05",
+    number: "5",
     title: "AI Integration Masterclass",
     description: "Connect powerful AI services to your no-code applications for maximum impact.",
     lessons: [
@@ -56,7 +56,7 @@ const CourseDetails = () => {
 
   },
   {
-    number: "06",
+    number: "6",
     title: "Scaling and Optimization",
     description: "Learn how to scale your automations and handle increased complexity as you grow.",
     lessons: [
@@ -65,7 +65,29 @@ const CourseDetails = () => {
     "Monitoring and Analytics",
     "Continuous Improvement Strategies"]
 
-  }];
+  },
+  {
+    number: "7",
+    title: "Scaling and Optimization",
+    description: "Learn how to scale your automations and handle increased complexity as you grow.",
+    lessons: [
+    "Performance Optimization Techniques",
+    "Scaling Your Automated Systems",
+    "Monitoring and Analytics",
+    "Continuous Improvement Strategies"]
+
+  },
+  {
+    number: "Бонусний",
+    title: "Scaling and Optimization",
+    description: "Learn how to scale your automations and handle increased complexity as you grow.",
+    lessons: [
+    "Performance Optimization Techniques",
+    "Scaling Your Automated Systems",
+    "Monitoring and Analytics",
+    "Continuous Improvement Strategies"]
+
+  } ];
 
 
   return (
@@ -84,11 +106,11 @@ const CourseDetails = () => {
           {modules.map((module, index) =>
           <div key={index} className="relative p-8 bg-[var(--bg-color)] rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 border border-[var(--border-color)]" data-id="6yuhv4r9g" data-path="components/CourseDetails.js"> {/* Use CSS Vars & add border */}
               {/* Gradient uses CSS vars, should adapt */}
-              <div className="absolute -top-4 -left-4 w-16 h-16 rounded-full bg-gradient-to-r from-[var(--primary)] to-[var(--secondary)] flex items-center justify-center text-white font-bold text-xl shadow-lg" data-id="49slkhcgn" data-path="components/CourseDetails.js">
-                {module.number}
+              <div className="absolute -top-8 -left-0.2 h-16 px-6 rounded-full bg-gradient-to-r from-[var(--primary)] to-[var(--secondary)] flex items-center justify-center text-white font-bold text-xl shadow-lg">
+                <span>Модуль {module.number}</span>
               </div>
               <div className="pl-6" data-id="ctlofezx0" data-path="components/CourseDetails.js">
-                <h3 className="text-xl font-semibold text-[var(--text-color)] mt-2" data-id="261tjohhc" data-path="components/CourseDetails.js">{module.title}</h3> {/* Use CSS Variable */}
+                <h3 className="text-xl font-semibold text-[var(--text-color)] mt-4" data-id="261tjohhc" data-path="components/CourseDetails.js">{module.title}</h3> {/* Use CSS Variable */}
                 <p className="mt-3 text-base text-[var(--gray)]" data-id="a4ke4aimi" data-path="components/CourseDetails.js">{module.description}</p> {/* Use CSS Variable */}
                 <ul className="mt-4 space-y-2" data-id="s4aesiv5g" data-path="components/CourseDetails.js">
                   {module.lessons.map((lesson, lessonIndex) =>
