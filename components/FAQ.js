@@ -3,28 +3,28 @@ const FAQ = () => {
 
   const faqs = [
   {
-    question: "Do I need any coding experience for this course?",
-    answer: "Absolutely not! This course is specifically designed for people with no coding background. We focus on visual tools and platforms that don't require you to write code."
+    question: "Як буде проходити навчання?",
+    answer: "Після оплати ви отримаєте доступ до телеграм-платформи, на яку кожного дня надходитиме новий навчальний модуль протягом 7 днів."
   },
   {
-    question: "How long does it take to complete the course?",
-    answer: "The course contains approximately 15 hours of video content. Most students complete it in 3-4 weeks when dedicating 4-5 hours per week. However, you have lifetime access, so you can go at your own pace."
+    question: "Скільки часу займе навчання та впровадження системи?",
+    answer: "Перші автоматизації запрацюють вже після 3-го модуля (день 3). Повна система буде готова через 7 днів. Ми рекомендуємо виділяти 1-1,5 години щодня для перегляду уроків та виконання практичних завдань."
   },
   {
-    question: "What tools will I learn to use?",
-    answer: "You'll learn popular no-code platforms like Zapier, Airtable, Bubble, and Webflow, as well as AI tools like OpenAI's GPT, Midjourney, and various automation platforms. All tools either have free tiers or trial periods for learning purposes."
+    question: "Чи потрібні мені навички програмування?",
+    answer: "Ні, курс розроблений для людей без технічного бекграунду. Ми використовуємо виключно хмарні No-code інструменти, які не вимагають написання жодного рядка коду та не потребують встановлення на комп'ютер."
   },
   {
-    question: "Will I get a certificate after completing the course?",
-    answer: "Yes, Premium plan students receive a certificate of completion. Self-paced students can purchase a certificate for an additional fee upon course completion."
+    question: "Чи буде ця система працювати для мого специфічного бізнесу/сфери?",
+    answer: "Так, система розроблена таким чином, щоб її можна було легко адаптувати під будь-які робочі процеси та індустрії."
   },
   {
-    question: "Can I get a refund if I'm not satisfied?",
-    answer: "Absolutely. We offer a 30-day money-back guarantee. If you're not completely satisfied with the course, simply email our support team within 30 days of purchase for a full refund."
+    question: "Які додаткові витрати потрібні для впровадження системи?",
+    answer: "Курс розрахований на можливості безкоштовної версії ClickUp та Make, цього достатньо для початку автоматизації. Для розширених функцій можуть знадобитися платні тарифи: ClickUp (від $7/місяць), Make (від $10/місяць)."
   },
   {
-    question: "Do I get lifetime access to the course materials?",
-    answer: "Yes, you receive lifetime access to all course materials, including any future updates and improvements we make to the curriculum."
+    question: "Що, якщо курс мені не підійде?",
+    answer: "Ви нічим не ризикуєте, ми надаємо гарантію повернення коштів протягом 14 днів з моменту оплати. Якщо курс вам не підійде з будь-якої причини, просто напишіть нам, і ми повернемо вам гроші без зайвих питань."
   }];
 
 
@@ -33,15 +33,14 @@ const FAQ = () => {
   };
 
   return (
-    <section id="faq" className="py-20 bg-[var(--bg-color)] text-[var(--text-color)]" data-id="wvke9hjli" data-path="components/FAQ.js"> {/* Use CSS Variables */}
+    <section id="faq" className="py-20 bg-[var(--card-bg)] text-[var(--text-color)]" data-id="wvke9hjli" data-path="components/FAQ.js"> {/* Use CSS Variables */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" data-id="yqokpn9xp" data-path="components/FAQ.js">
         <div className="text-center" data-id="x7gzg0hix" data-path="components/FAQ.js">
-          <h2 className="text-base font-semibold tracking-wide uppercase text-[var(--primary)]" data-id="6yqmqvugw" data-path="components/FAQ.js">FAQ</h2> {/* Use CSS Variable */}
-          <p className="mt-2 text-3xl font-extrabold sm:text-4xl" data-id="q5io4f9lr" data-path="components/FAQ.js"> {/* Inherits text color */}
-            Frequently Asked Questions
-          </p>
+          <h2 className="mt-2 text-3xl font-extrabold sm:text-4xl" data-id="q5io4f9lr" data-path="components/FAQ.js"> {/* Inherits text color */}
+            Питання/Відповіді
+          </h2>
           <p className="mt-4 max-w-2xl text-xl text-[var(--gray)] mx-auto" data-id="krlf7anmv" data-path="components/FAQ.js"> {/* Use CSS Variable */}
-            Everything you need to know about the course and enrollment.
+            Все, що може тебе хвилювати та, що потрібно знати про курс
           </p>
         </div>
 
@@ -71,17 +70,11 @@ const FAQ = () => {
         </div>
 
         <div className="mt-16 text-center" data-id="eoeohz2re" data-path="components/FAQ.js">
-          <h3 className="text-lg font-medium text-[var(--text-color)]" data-id="bd0yn1p39" data-path="components/FAQ.js">Still have questions?</h3> {/* Use CSS Variable */}
+          <h3 className="text-lg font-medium text-[var(--text-color)]" data-id="bd0yn1p39" data-path="components/FAQ.js">Ще залишились питання?</h3> {/* Use CSS Variable */}
           <p className="mt-2 text-base text-[var(--gray)]" data-id="76ic2v4xn" data-path="components/FAQ.js"> {/* Use CSS Variable */}
-            If you cannot find an answer to your question in our FAQ, feel free to contact us.
+            Якщо ти не знаходиш відповідь на своє питання, не соромся зв'язатись з нами по вказанному імейлу.
           </p>
-          {/* Use CSS variables for the gradient */}
-          <a
-            href="#"
-            className="mt-6 inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-gradient-to-r from-[var(--primary)] to-[var(--secondary)] hover:opacity-90 button-primary" data-id="8cs3q8oe8" data-path="components/FAQ.js">
 
-            Contact Support
-          </a>
         </div>
       </div>
     </section>);
