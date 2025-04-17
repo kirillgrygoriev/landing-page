@@ -94,7 +94,7 @@ const CourseDetails = () => {
     <section id="curriculum" className="py-20 bg-[var(--bg-color)] text-[var(--text-color)]" data-id="1b1hu14le" data-path="components/CourseDetails.js"> {/* Use CSS Variables */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" data-id="jfama0ur0" data-path="components/CourseDetails.js">
         <div className="text-center" data-id="tai82edto" data-path="components/CourseDetails.js">
-          <h2 className="mt-2 text-3xl font-extrabold sm:text-4xl" data-id="hgl1y5jz4" data-path="components/CourseDetails.js"> {/* Inherits text color */}
+          <h2 className="mt-2 pb-8 text-3xl font-extrabold sm:text-4xl" data-id="hgl1y5jz4" data-path="components/CourseDetails.js"> {/* Inherits text color */}
             Програма курсу
           </h2>
           {/* <p className="mt-4 max-w-2xl text-xl text-[var(--gray)] mx-auto" data-id="7ms3i86w1" data-path="components/CourseDetails.js"> Use CSS Variable
@@ -110,7 +110,7 @@ const CourseDetails = () => {
                 <span>Модуль {module.number}</span>
               </div>
               <div className="pl-6" data-id="ctlofezx0" data-path="components/CourseDetails.js">
-                <h3 className="text-xl font-semibold text-[var(--text-color)] mt-4" data-id="261tjohhc" data-path="components/CourseDetails.js">{module.title}</h3> {/* Use CSS Variable */}
+                <h3 className="text-xl font-semibold text-[var(--text-color)] mt-6" data-id="261tjohhc" data-path="components/CourseDetails.js">{module.title}</h3> {/* Use CSS Variable */}
                 <p className="mt-3 text-base text-[var(--gray)]" data-id="a4ke4aimi" data-path="components/CourseDetails.js">{module.description}</p> {/* Use CSS Variable */}
                 <ul className="mt-4 space-y-2" data-id="s4aesiv5g" data-path="components/CourseDetails.js">
                   {module.lessons.map((lesson, lessonIndex) =>
@@ -130,8 +130,11 @@ const CourseDetails = () => {
         <div className="mt-16 text-center " data-id="on8gkqxz5" data-path="components/CourseDetails.js">
           {/* Use CSS variables for the gradient */}
           <a href="#pricing" className="inline-flex items-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-gradient-to-r from-purple-600 to-pink-500 hover:from-purple-700 hover:to-pink-600 md:py-4 md:text-lg md:px-20 button-primary" data-id="lp3axjkrh" data-path="components/CourseDetails.js">
-            Почни навчання зараз
+            Розпочати навчання зараз
           </a>
+          <p className="mt-12 text-lg font-medium text-[var(--text-color)]" data-id="76ic2v4xn" data-path="components/FAQ.js"> {/* Use CSS Variable */}
+            P.s. Ти нічим не ризикуєш. Якщо курс тобі не сподобається, ми повернемо тобі кошти без зайвих питань.
+          </p>
         </div>
       </div>
     </section>);

@@ -65,6 +65,11 @@ const Features = () => {
               </div>
             )}
           </div>
+            <div className="mt-16 text-center" data-id="eoeohz2re" data-path="components/FAQ.js">
+              <p className="font-bold text-lg gradient-text">
+                Уяви як зміниться твій робочий день без стресу від перевантаження задачами. Поверни собі зосередження та фокус на стратегічних цілях.
+              </p>
+            </div>
         </div>
       </div>
     </section>);
