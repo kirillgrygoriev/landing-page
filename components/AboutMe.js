@@ -47,8 +47,8 @@ const AboutMe = () => {
                   </li>
                   <li className="flex">
                     <i className="fas fa-check-circle text-[var(--primary)] mt-1 flex-shrink-0"></i>
-                    <span className="ml-3 text-[var(--gray)]">Запровадив програму навчання для проджект-
-                    менеджерів у гейм-дев індустрії, маю великий досвід
+                    <span className="ml-3 text-[var(--gray)]">Запровадив програму навчання для проджект
+                    менеджерів у геймдев індустрії, маю великий досвід
                     менторства</span>
                   </li>
                   <li className="flex">

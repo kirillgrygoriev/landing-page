@@ -2,90 +2,90 @@ const CourseDetails = () => {
   const modules = [
   {
     number: "1",
-    title: "Foundations of No-Code Development",
-    description: "Understand the no-code revolution and discover the best tools for different use cases.",
+    title: "Трансформація робочих процесів з AI та No-Code",
+    description: "Твій перший крок до повної автоматизації управління задачами.",
     lessons: [
-    "Introduction to the No-Code Movement",
-    "Choosing the Right Tools for Your Project",
-    "No-Code vs Low-Code: Understanding the Difference",
-    "Setting Up Your First No-Code Project"]
+    "Знайомство з новими можливостями AI для підвищення продуктивності",
+    "Огляд поєднання GTD, ClickUp та штучного інтелекту в єдину систему",
+    "Практичні приклади впровадження AI-рішень у щоденні завдання",
+    "Створення персональної стратегії автоматизації твоїх робочих процесів"]
 
   },
   {
     number: "2",
-    title: "AI Basics for Automation",
-    description: "Learn how AI can be leveraged to automate tasks without technical expertise.",
+    title: "ClickUp як мозковий центр твоєї операційки",
+    description: "Фундамент твоєї автоматизованої системи управління.",
     lessons: [
-    "AI Fundamentals for Non-Developers",
-    "Introduction to Natural Language Processing",
-    "Computer Vision in Automation",
-    "AI Decision Making Systems"]
+    "Налаштування структурованого робочого простору в ClickUp",
+    "Створення інтуїтивної системи для ефективного управління задачами",
+    "Впровадження стратегій боротьби з інформаційним перевантаженням",
+    "Оптимізація цифрового робочого простору під твій стиль мислення"]
 
   },
   {
     number: "3",
-    title: "Building Automated Workflows",
-    description: "Create end-to-end workflows that run on autopilot and save you hours every week.",
+    title: "Магія інтеграцій",
+    description: "Рушійна сила автоматизацій без навичок програмування.",
     lessons: [
-    "Workflow Mapping and Optimization",
-    "Trigger-Based Automation Systems",
-    "Data Collection and Processing",
-    "Error Handling in Automated Systems"]
+    "Опанування Make як інструменту для no-code автоматизацій",
+    "З'єднання ClickUp з іншими додатками та сервісами",
+    "Створення автоматичних сценаріїв обробки інформації",
+    "Налаштування ланцюжків автоматизацій для рутинних процесів"]
 
   },
   {
     number: "4",
-    title: "Advanced No-Code Applications",
-    description: "Take your skills to the next level by building sophisticated applications without coding.",
+    title: "GTD 2.0: Адаптація класичної методології до digital-світу",
+    description: "Методологія, що справді працює в умовах сучасного життя.",
     lessons: [
-    "Creating Custom Databases",
-    "User Authentication and Access Control",
-    "Building Interactive Dashboards",
-    "Mobile App Development with No-Code"]
+    "Впровадження принципів Getting Things Done у цифровому середовищі",
+    "Налаштування єдиної злагодженої системи управління задачами в ClickUp",
+    "Адаптація класичних підходів GTD до сучасних інструментів",
+    "Персоналізація методології під твій особистий стиль роботи"]
 
   },
   {
     number: "5",
-    title: "AI Integration Masterclass",
-    description: "Connect powerful AI services to your no-code applications for maximum impact.",
+    title: "AI-помічник: Автоматична категоризація твого inbox",
+    description: "Автопілот для твоїх вхідних завдань та повідомлень.",
     lessons: [
-    "Integration with OpenAI Services",
-    "Image and Speech Recognition",
-    "Predictive Analytics Implementation",
-    "Building AI-Powered Chatbots"]
+    "Налаштування AI для автоматичного сортування вхідних завдань",
+    "Створення правил для пріоритизації задач на основі їхнього змісту",
+    "Розробка AI-сценаріїв для розподілу завдань за проєктами і категоріями",
+    "Автоматизація обробки вхідних даних для економії 1-2 годин щодня"]
 
   },
   {
     number: "6",
-    title: "Scaling and Optimization",
-    description: "Learn how to scale your automations and handle increased complexity as you grow.",
+    title: "Weekly Review на автопілоті",
+    description: "15 хвилин замість 2 годин на тиждень для підведення підсумків.",
     lessons: [
-    "Performance Optimization Techniques",
-    "Scaling Your Automated Systems",
-    "Monitoring and Analytics",
-    "Continuous Improvement Strategies"]
+    "Створення автоматизованої системи тижневого огляду з допомогою AI",
+    "Налаштування автоматичного аналізу твоєї продуктивності",
+    "Розробка системи рекомендацій для підвищення ефективності",
+    "Трансформація виснажливого процесу в короткий аналітичний звіт"]
 
   },
   {
     number: "7",
-    title: "Scaling and Optimization",
-    description: "Learn how to scale your automations and handle increased complexity as you grow.",
+    title: "Управління системою: Моніторинг та оптимізація",
+    description: "Контроль і вдосконалення твоєї автоматизованої операційки.",
     lessons: [
-    "Performance Optimization Techniques",
-    "Scaling Your Automated Systems",
-    "Monitoring and Analytics",
-    "Continuous Improvement Strategies"]
+    "Налаштування дашбордів для контролю ефективності твоєї системи",
+    "Відстеження ключових метрик продуктивності та автоматизацій",
+    "Впровадження процесів постійного вдосконалення робочих процесів",
+    "Оптимізація системи для максимальної ефективності та продуктивності"]
 
   },
   {
     number: "Бонусний",
-    title: "Scaling and Optimization",
-    description: "Learn how to scale your automations and handle increased complexity as you grow.",
+    title: "Система управління автоматизаціями",
+    description: "Створюємо операційну систему для твоїх автоматизацій у ClickUp.",
     lessons: [
-    "Performance Optimization Techniques",
-    "Scaling Your Automated Systems",
-    "Monitoring and Analytics",
-    "Continuous Improvement Strategies"]
+    "Налаштування борду в ClickUp для систематизації всіх твоїх автоматизацій",
+    "Впровадження системи унікальних ID для відстеження кожної автоматизації",
+    "Документування критичних параметрів: тригери, платформи-джерела та платформи-призначення",
+    "Візуалізація зв'язків між автоматизаціями для швидкого аналізу впливу будь-яких змін"]
 
   } ];
 
@@ -95,11 +95,11 @@ const CourseDetails = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" data-id="jfama0ur0" data-path="components/CourseDetails.js">
         <div className="text-center" data-id="tai82edto" data-path="components/CourseDetails.js">
           <h2 className="mt-2 text-3xl font-extrabold sm:text-4xl" data-id="hgl1y5jz4" data-path="components/CourseDetails.js"> {/* Inherits text color */}
-            Course Modules
+            Програма курсу
           </h2>
-          <p className="mt-4 max-w-2xl text-xl text-[var(--gray)] mx-auto" data-id="7ms3i86w1" data-path="components/CourseDetails.js"> {/* Use CSS Variable */}
+          {/* <p className="mt-4 max-w-2xl text-xl text-[var(--gray)] mx-auto" data-id="7ms3i86w1" data-path="components/CourseDetails.js"> Use CSS Variable
             A comprehensive curriculum designed to take you from beginner to expert in no-code development and AI automation.
-          </p>
+          </p> */}
         </div>
 
         <div className="mt-16 space-y-12 lg:space-y-0 lg:grid lg:grid-cols-2 lg:gap-x-8 lg:gap-y-12" data-id="zvdq6ux8a" data-path="components/CourseDetails.js">
@@ -127,10 +127,10 @@ const CourseDetails = () => {
           )}
         </div>
 
-        <div className="mt-16 text-center" data-id="on8gkqxz5" data-path="components/CourseDetails.js">
+        <div className="mt-16 text-center " data-id="on8gkqxz5" data-path="components/CourseDetails.js">
           {/* Use CSS variables for the gradient */}
-          <a href="#pricing" className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-gradient-to-r from-[var(--primary)] to-[var(--secondary)] hover:opacity-90 button-primary" data-id="lp3axjkrh" data-path="components/CourseDetails.js">
-            Enroll Now and Start Learning
+          <a href="#pricing" className="inline-flex items-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-gradient-to-r from-purple-600 to-pink-500 hover:from-purple-700 hover:to-pink-600 md:py-4 md:text-lg md:px-20 button-primary" data-id="lp3axjkrh" data-path="components/CourseDetails.js">
+            Почни навчання зараз
           </a>
         </div>
       </div>
