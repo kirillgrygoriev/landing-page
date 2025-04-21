@@ -10,7 +10,7 @@ const Footer = () => {
             {/* Logo - Always white */}
             <img src="assets/flowsuite_logo_white.png" alt="Flowsuite Logo" className="h-8 w-auto logo-img" data-id="footer-logo-white" data-path="components/Footer.js" />
             <p className="text-gray-400 dark:text-gray-400 text-base mt-2" data-id="rfopl1rzn" data-path="components/Footer.js"> {/* Explicit dark color */}
-              Empowering professionals to harness the power of no-code tools and AI automations without technical expertise.
+            Створюємо AI-рішення, які змінять ваш підхід до ведення бізнесу. Трансформуємо операційний хаос в інтелектуальні системи.
             </p>
             <div className="flex space-x-6" data-id="5rm27h6f3" data-path="components/Footer.js">
               {/* Icons use text color, which is already suitable */}

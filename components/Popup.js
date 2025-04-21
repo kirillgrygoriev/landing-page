@@ -58,13 +58,14 @@ const Popup = ({ isOpen, onClose, onSubmit }) => {
           {/* Pink header */}
           <div className="bg-gradient-to-r from-[var(--primary)] to-[var(--secondary)] p-6 text-white">
             <h3 className="text-xl font-semibold text-center">
-              Заповніть форму й отримайте доступ до 21-денного марафону від Ольги Острікової за спеціальною ціною
+              Заповніть форму та отримайте доступ до курсу за спеціальною ціною вже сьогодні
             </h3>
             
             <div className="flex justify-center items-center mt-4">
-              <div className="text-3xl font-bold">299грн</div>
-              <div className="ml-2 text-xl">замість 1500грн</div>
+              <div className="text-3xl font-bold">287 грн</div>
+              <div className="ml-2 text-xl">замість <del>4100 грн</del></div>
             </div>
+            
           </div>
           
           {/* Form */}
@@ -118,8 +119,7 @@ const Popup = ({ isOpen, onClose, onSubmit }) => {
             
             {/* Guarantee */}
             <div className="text-center text-xs text-[var(--gray)] mt-6">
-              Ви нічим не ризикуєте! Протягом 14 днів, незалежно від причин,<br />
-              ми можемо повернути гроші, якщо курс вам не підійде
+              Гарантія повернення коштів протягом 14 днів, якщо курс не підійде
             </div>
           </form>
         </div>

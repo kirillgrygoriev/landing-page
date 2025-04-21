@@ -133,7 +133,7 @@ const CourseDetails = () => {
             Розпочати навчання зараз
           </a>
           <p className="mt-12 text-lg font-medium text-[var(--text-color)]" data-id="76ic2v4xn" data-path="components/FAQ.js"> {/* Use CSS Variable */}
-            P.s. Ти нічим не ризикуєш. Якщо курс тобі не сподобається, ми повернемо тобі кошти без зайвих питань.
+            P.S. Ти нічим не ризикуєш. Якщо курс тобі не сподобається, ми повернемо тобі кошти без зайвих питань.
           </p>
         </div>
       </div>
