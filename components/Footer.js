@@ -96,12 +96,12 @@ const Footer = () => {
                 <ul className="mt-4 space-y-4" data-id="jq9ayyfsl" data-path="components/Footer.js">
                   <li data-id="ozimlkhoj" data-path="components/Footer.js">
                     <a href="#" className="text-base text-gray-400 hover:text-gray-300 dark:text-gray-400 dark:hover:text-gray-300" data-id="w103clt1d" data-path="components/Footer.js"> {/* Explicit dark color */}
-                      Privacy Policy
+                      Політика конфіденційності
                     </a>
                   </li>
                   <li data-id="v8rm0he71" data-path="components/Footer.js">
                     <a href="#" className="text-base text-gray-400 hover:text-gray-300 dark:text-gray-400 dark:hover:text-gray-300" data-id="pzkan6sls" data-path="components/Footer.js"> {/* Explicit dark color */}
-                      Terms of Service
+                      Публічка оферта
                     </a>
                   </li>
                   <li data-id="gqzx8e5xl" data-path="components/Footer.js">
@@ -136,9 +136,12 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="mt-12 border-t border-gray-700 dark:border-gray-700 pt-8" data-id="9by6hpxu1" data-path="components/Footer.js"> {/* Explicit dark border */}
+        <div className="mt-12 border-t border-gray-700 dark:border-gray-700 pt-8 pb-8" data-id="9by6hpxu1" data-path="components/Footer.js"> {/* Explicit dark border */}
           <p className="text-base text-gray-400 dark:text-gray-400 text-center" data-id="mdhzufwed" data-path="components/Footer.js"> {/* Explicit dark color */}
-            &copy; {currentYear} Sexy No-code and AI Automations. All rights reserved.
+            &copy; {currentYear} Опануй No-code та AI Автоматизації. Всі права захищено.
+          </p>
+          <p className="text-base text-gray-400 dark:text-gray-400 text-center" data-id="mdhzufwed" data-path="components/Footer.js"> {/* Explicit dark color */}
+            Будь-яке копіювання матеріалів дозволяється тільки з погодження правовласників.
           </p>
         </div>
       </div>
