@@ -8,7 +8,7 @@ const Navbar = ({ toggleTheme, currentTheme }) => {
             <a href="/" className="flex-shrink-0 flex items-center">
               <img
                 className="h-8 w-auto logo-img" /* Added logo-img class */
-                src={currentTheme === 'light' ? 'assets/flowsuite_logo_black.png' : 'assets/flowsuite_logo_white.png'}
+                src={currentTheme === 'light' ? '../assets/flowsuite_logo_black.png' : '../assets/flowsuite_logo_white.png'}
                 alt="Flowsuite Logo"
               />
             </a>

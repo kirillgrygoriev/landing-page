@@ -90,7 +90,7 @@ const AboutMe = () => {
                 <div className="aspect-w-4 aspect-h-5 lg:aspect-none">
                   <img 
                     className="rounded-lg shadow-lg object-cover object-center card-hover"
-                    src="assets/about_me_500x700.jpg" 
+                    src="../assets/about_me_500x700.jpg" 
                     alt="Кирило Григор'єв, експерт з No-code та AI автоматизацій"
                   />
                 </div>
@@ -99,7 +99,7 @@ const AboutMe = () => {
                     <div className="flex-shrink-0">
                       {/*<i className="fas fa-certificate text-[var(--primary)] text-2xl"></i>*/}
                       <img 
-                        src="assets/verified-ambassador-badge.svg" 
+                        src="../assets/verified-ambassador-badge.svg" 
                         alt="ClickUp Ambassador Badge" 
                         className="h-25 w-auto flex-shrink-0"
                       />
