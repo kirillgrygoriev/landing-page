@@ -49,17 +49,21 @@ const Popup = ({ isOpen, onClose, onSubmit }) => {
           {/* Close button */}
           <button 
             onClick={onClose} 
-            className="absolute top-2 right-2 z-10 text-4xl font-light text-white bg-transparent border-none cursor-pointer"
+            className="absolute top-0 right-2 z-10 text-4xl font-light text-white bg-transparent border-none cursor-pointer"
             aria-label="Close popup"
           >
             ×
           </button>
           
           {/* Pink header */}
-          <div className="bg-gradient-to-r from-[var(--primary)] to-[var(--secondary)] p-6 text-white">
-            <h3 className="text-xl font-semibold text-center">
-              Заповніть форму та отримайте доступ до курсу за спеціальною ціною вже сьогодні
+          <div className="bg-[var(--primary)] p-6 text-white">
+            <h3 className="text-2xl font-semibold text-center">
+              ЗАПОВНІТЬ ФОРМУ
             </h3>
+            <p className="mt-2 text-center text-xl">
+              та отримайте доступ до курсу за спеціальною ціною вже сьогодні
+            </p>
+            
             
             <div className="flex justify-center items-center mt-4">
               <div className="text-3xl font-bold">287 грн</div>
@@ -69,7 +73,7 @@ const Popup = ({ isOpen, onClose, onSubmit }) => {
           </div>
           
           {/* Form */}
-          <form onSubmit={handleSubmit} className="p-6 bg-[var(--bg-color)]">
+          <form onSubmit={handleSubmit} className="p-6 bg-gray-900">
             <div className="mb-4">
               <input
                 type="email"
@@ -94,20 +98,20 @@ const Popup = ({ isOpen, onClose, onSubmit }) => {
             
             <button 
               type="submit"
-              className="w-full py-3 px-6 text-white font-medium text-lg rounded-full bg-[#4169E1] hover:bg-[#3050c8] transition-all duration-300"
+              className="w-full py-3 px-6 text-white font-medium text-lg rounded-full shadow-lg bg-gradient-to-r from-purple-600 to-pink-500 hover:from-purple-700 hover:to-pink-600 transition-all duration-300"
             >
-              ОТРИМАТИ ДОСТУП
+              Отримати доступ
             </button>
             
             {/* Timer */}
             <div className="mt-8 mb-4">
               <div className="text-center text-sm font-semibold text-[var(--gray)]">
-                ДО ЗАКІНЧЕННЯ<br />
-                АКЦІЇ ЗАЛИШИЛОСЬ
+                До закінчення дії спеціальної<br />
+                 пропозиції залишилось:
               </div>
               
-              <div className="flex justify-center mt-2">
-                <div className="text-[var(--primary)] text-4xl font-bold flex items-center">
+              <div className="flex justify-center mt-4">
+                <div className="text-gray-300 text-4xl font-bold flex items-center">
                   <span>{timeLeft.hours}</span>
                   <span className="mx-2">:</span>
                   <span>{timeLeft.minutes}</span>
@@ -118,8 +122,8 @@ const Popup = ({ isOpen, onClose, onSubmit }) => {
             </div>
             
             {/* Guarantee */}
-            <div className="text-center text-xs text-[var(--gray)] mt-6">
-              Гарантія повернення коштів протягом 14 днів, якщо курс не підійде
+            <div className="text-center text-sm font-semibold text-[var(--gray)] mt-4">
+              Гарантія повернення коштів протягом 14 днів!
             </div>
           </form>
         </div>
