@@ -37,12 +37,12 @@ const CoursePromo = () => {
               </div>
               <div className="hidden md:block">
                 <img 
-                  src="assets/course-promo-image.jpg" 
+                  src="https://images.unsplash.com/photo-1589254065878-42c9da997008?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" 
                   alt="No-code та AI автоматизації курс" 
                   className="rounded-lg shadow-md"
                   onError={(e) => {
                     e.target.onerror = null;
-                    e.target.src = "https://via.placeholder.com/500x300?text=No-code+та+AI+автоматизації";
+                    e.target.src = "https://images.unsplash.com/photo-1589254065878-42c9da997008?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80";
                   }}
                 />
               </div>

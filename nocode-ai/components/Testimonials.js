@@ -6,7 +6,7 @@ const Testimonials = ({ openPopup }) => {
     screenshotSrc: "assets/testimonials/example_of_testimonial_1.jpg",
     author: "Олексій Колесніков",
     role: "Manual QA Engineer",
-    avatar: "../assets/testimonials/avatar_1.jpeg"
+    avatar: "assets/testimonials/avatar_1.jpeg"
   },
   {
     /*test: "assets/example_of_testimonial_2.jpg" */
@@ -14,7 +14,7 @@ const Testimonials = ({ openPopup }) => {
     screenshotSrc: "assets/testimonials/example_of_testimonial_2.jpg",
     author: "Вадим Смолкін",
     role: "Head of Data Analytics Department",
-    avatar: "../assets/testimonials/avatar_2.jpeg"
+    avatar: "assets/testimonials/avatar_2.jpeg"
   },
   {
     /*test: "assets/example_of_testimonial_3.jpg" */
@@ -22,7 +22,7 @@ const Testimonials = ({ openPopup }) => {
     screenshotSrc: "assets/testimonials/example_of_testimonial_3.jpg",
     author: "Ангеліна Стинич",
     role: "Executive Assistant",
-    avatar: "../assets/testimonials/avatar_3.jpeg"
+    avatar: "assets/testimonials/avatar_3.jpeg"
   },
   {
     /*test: "assets/example _of_testimonial_4.jpg" */
@@ -30,7 +30,7 @@ const Testimonials = ({ openPopup }) => {
     screenshotSrc: "assets/testimonials/example_of_testimonial_4.jpg",
     author: "Анастасія Григор'єва",
     role: "Founder & CEO at LeBoxiq",
-    avatar: "../assets/testimonials/avatar_4.jpeg"
+    avatar: "assets/testimonials/avatar_4.jpeg"
   }];
 
 
