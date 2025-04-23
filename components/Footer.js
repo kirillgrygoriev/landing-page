@@ -10,11 +10,9 @@ const Footer = () => {
         <div className="space-y-6 text-start" data-id="2e8rk9sfn" data-path="components/Footer.js">
           {/* Logo - Always white */}
           <img src="assets/flowsuite_logo_white.png" alt="Flowsuite Logo" className="h-8 w-auto logo-img" data-id="footer-logo-white" data-path="components/Footer.js" />
-          <div className="mt-10" data-id="2e8rk9sfn" data-path="components/Footer.js">
           <p className="text-gray-400 dark:text-gray-400 text-base mt-4" data-id="rfopl1rzn" data-path="components/Footer.js"> {/* Explicit dark color */}
             Створюємо AI-рішення, які змінять ваш підхід до ведення бізнесу. Трансформуємо операційний хаос в інтелектуальні системи.
-          </p>  
-          </div>     
+          </p>       
         </div>
           
           <div className="space-y-4 xl:col-span-1" data-id="xrhe5ji7d" data-path="components/Footer.js">
