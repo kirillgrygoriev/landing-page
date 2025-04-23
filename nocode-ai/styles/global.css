@@ -1,0 +1,172 @@
+/* Global Styles */
+:root {
+  /* Light theme (default) */
+  --primary: #7c3aed;
+  --primary-dark: #6d28d9;
+  --secondary: #ec4899;
+  --secondary-dark: #db2777;
+  --text-color: #1f2937; /* Was --dark */
+  --bg-color: #ffffff;   /* Default background */
+  --card-bg: #f3f4f6;  /* Was --light */
+  --border-color: #e5e7eb;
+  --gray: #6b7280;
+}
+
+html.dark {
+  /* Dark theme overrides */
+  --primary: #9333ea; /* Lighter purple */
+  --primary-dark: #a855f7;
+  --secondary: #f472b6; /* Lighter pink */
+  --secondary-dark: #f9a8d4;
+  --text-color: #f3f4f6; /* Light text */
+  --bg-color: #111827;   /* Dark background */
+  --card-bg: #1f2937;  /* Darker card background */
+  --border-color: #374151;
+  --gray: #9ca3af;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: var(--text-color); /* Use variable */
+  background-color: var(--bg-color); /* Use variable */
+  line-height: 1.6;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+/* Update existing rules to use variables where appropriate */
+.gradient-text {
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(90deg, var(--primary), var(--secondary));
+}
+
+.gradient-bg {
+  background-image: linear-gradient(90deg, var(--primary), var(--secondary));
+}
+
+.button-primary {
+  transition: all 0.3s ease;
+}
+
+.button-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.card-hover {
+  transition: all 0.3s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.6s ease-out forwards;
+}
+
+/* Override default focus styles */
+button:focus, a:focus {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+}
+
+/* Ensure components using card-bg transition smoothly */
+.card-hover, nav { /* Add other elements using card-bg if needed */
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Logo styling */
+.logo-img {
+  height: 2rem; /* Corresponds to h-8 in Tailwind */
+  width: auto;
+}
+
+/* Specific fix for Hero description text in dark mode */
+html.dark [data-id="course-desc-date"] > span:first-child {
+  color: var(--text-color);
+}
+
+/* Force dark background for WhoIsThisFor section */
+html.dark #who-is-this-for {
+  background-color: var(--card-bg); /* Use the intended darker card background */
+}
+
+/* Force dark styles for elements within WhoIsThisFor section */
+html.dark #who-is-this-for h2 {
+  color: var(--text-color); /* Ensure title is light */
+}
+
+html.dark #who-is-this-for .card-hover {
+  background-color: var(--bg-color); /* Make cards darker like CourseDetails */
+  /* We might need to adjust text colors within the card too */
+}
+
+html.dark #who-is-this-for .card-hover p {
+   color: var(--text-color); /* Make paragraph text light */
+}
+
+html.dark #who-is-this-for .card-hover strong {
+   color: var(--text-color); /* Make bold text light (adjust if needed) */
+   /* Consider a slightly brighter color if --text-color isn't distinct enough */
+   /* color: #e5e7eb; /* Example: Slightly brighter gray */
+}
+
+/* Popup animation styles */
+.popup-overlay {
+  animation: fadeIn 0.3s ease forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Prevent body scroll when popup is open */
+body.popup-open {
+  overflow: hidden;
+}
+
+/* Popup mobile responsiveness */
+@media (max-width: 640px) {
+  .popup-overlay > div {
+    width: 95%;
+    margin: 0 10px;
+  }
+}
+
+/* CourseContent styles */
+#course-content .message-bubble {
+  transition: all 0.3s ease;
+}
+
+#course-content .message-bubble:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+/* Ensure proper contrast for the yellow highlight box in dark mode */
+html.dark #course-content .bg-amber-300 {
+  color: #1a202c; /* Dark text for better contrast on amber background */
+}
+
+/* Testimonial screenshot styling */
+#testimonials .rounded-xl img {
+  max-width: 100%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid var(--border-color);
+}
+
+/* Optional: Add hover effect to screenshots */
+#testimonials .rounded-xl:hover {
+  transform: translateY(-2px);
+  transition: transform 0.3s ease;
+}
