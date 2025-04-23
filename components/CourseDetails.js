@@ -1,4 +1,4 @@
-const CourseDetails = () => {
+const CourseDetails = ({openPopup}) => {
   const modules = [
   {
     number: "1",
@@ -129,8 +129,16 @@ const CourseDetails = () => {
 
         <div className="mt-16 text-center " data-id="on8gkqxz5" data-path="components/CourseDetails.js">
           {/* Use CSS variables for the gradient */}
-          <a href="#pricing" className="inline-flex items-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-gradient-to-r from-purple-600 to-pink-500 hover:from-purple-700 hover:to-pink-600 md:py-4 md:text-lg md:px-20 button-primary" data-id="lp3axjkrh" data-path="components/CourseDetails.js">
-            Розпочати навчання зараз
+          <a 
+            onClick={(e) => {
+              e.preventDefault();
+              openPopup();
+            }}
+            href="#" 
+            className="inline-flex items-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-gradient-to-r from-purple-600 to-pink-500 hover:from-purple-700 hover:to-pink-600 md:py-4 md:text-lg md:px-20 button-primary" 
+            data-id="lp3axjkrh" 
+            data-path="components/CourseDetails.js">
+              Розпочати навчання зараз
           </a>
           <p className="mt-12 text-lg font-medium text-[var(--text-color)]" data-id="76ic2v4xn" data-path="components/FAQ.js"> {/* Use CSS Variable */}
             P.S. Ти нічим не ризикуєш. Якщо курс тобі не сподобається, ми повернемо тобі кошти без зайвих питань.
