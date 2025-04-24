@@ -1,0 +1,26 @@
+{
+  "name": "landing-page",
+  "version": "1.0.0",
+  "description": "Офіційний веб-сайт для курсу з No-code та AI автоматизації. Проект включає головну сторінку сайту та окремий лендінг для курсу.",
+  "main": "main-app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kirillgrygoriev/landing-page.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/kirillgrygoriev/landing-page/issues"
+  },
+  "homepage": "https://github.com/kirillgrygoriev/landing-page#readme",
+  "devDependencies": {
+    "clean-css-cli": "^5.6.3",
+    "imagemin-cli": "^8.0.0",
+    "terser": "^5.39.0"
+  }
+}
