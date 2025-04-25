@@ -4,7 +4,9 @@
   "description": "Офіційний веб-сайт для курсу з No-code та AI автоматизації. Проект включає головну сторінку сайту та окремий лендінг для курсу.",
   "main": "main-app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "bash build.sh",
+    "deploy": "bash deploy.sh"
   },
   "repository": {
     "type": "git",
