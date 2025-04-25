@@ -3,7 +3,7 @@
 # Конфігурація деплою
 SERVER_USER="flowsua"
 SERVER_IP="188.40.219.139"
-SERVER_PATH="www647.your-server.de"  # Наприклад: /var/www/flowsuite.tech
+SERVER_PATH="/public_html"  # Наприклад: /var/www/flowsuite.tech
 
 # Перевірка наявності директорії build
 if [ ! -d "build" ]; then
