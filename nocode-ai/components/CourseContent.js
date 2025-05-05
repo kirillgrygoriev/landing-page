@@ -1,7 +1,7 @@
 const CourseContent = () => {
     return (
       <section id="course-content" className="py-20 bg-[var(--card-bg)] text-[var(--text-color)]">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
           <div className="text-center">
             <h2 className="mt-2 text-3xl font-extrabold sm:text-4xl">
               З чого складається курс

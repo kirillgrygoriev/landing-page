@@ -23,18 +23,30 @@ npx clean-css-cli styles/global.css -o build/styles/global.css
 npx clean-css-cli nocode-ai/styles/global.css -o build/nocode-ai/styles/global.css
 
 # Мініфікація JavaScript
-echo "📜 Мініфікація JavaScript файлів..."
-npx terser main-app.js -o build/main-app.js
-npx terser nocode-ai/app.js -o build/nocode-ai/app.js
+echo "📜 Транспіляція та мініфікація JavaScript файлів..."
+
+# Transpile and minify main-app.js
+npx babel main-app.js --out-file build/main-app.transpiled.js
+npx terser build/main-app.transpiled.js -o build/main-app.js
+rm build/main-app.transpiled.js
+
+# Transpile and minify nocode-ai/app.js
+npx babel nocode-ai/app.js --out-file build/nocode-ai/app.transpiled.js
+npx terser build/nocode-ai/app.transpiled.js -o build/nocode-ai/app.js
+rm build/nocode-ai/app.transpiled.js
 
 # Мініфікація компонентів
 echo "🧩 Мініфікація компонентів..."
 for file in components/*.js; do
-  npx terser "$file" -o "build/$file"
+  npx babel "$file" --out-file "build/${file%.js}.transpiled.js"
+  npx terser "build/${file%.js}.transpiled.js" -o "build/$file"
+  rm "build/${file%.js}.transpiled.js"
 done
 
 for file in nocode-ai/components/*.js; do
-  npx terser "$file" -o "build/$file"
+  npx babel "$file" --out-file "build/${file%.js}.transpiled.js"
+  npx terser "build/${file%.js}.transpiled.js" -o "build/$file"
+  rm "build/${file%.js}.transpiled.js"
 done
 
 # Оптимізація зображень
