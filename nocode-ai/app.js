@@ -10,6 +10,16 @@ const App = () => {
   const openPopup = () => {
     setIsPopupOpen(true);
     document.body.classList.add('popup-open');
+
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({
+      'event': 'popup_open',
+      // Використовуємо той самий button_text і button_location,
+      // які вже були передані при click_cta
+      'popup_source': window.dataLayer && window.dataLayer.find ? 
+                    (window.dataLayer.find(item => item.event === 'click_cta')?.button_location || 'unknown') :
+                    'unknown'
+    });
   };
 
   const closePopup = () => {
