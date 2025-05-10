@@ -132,6 +132,13 @@ const CourseDetails = ({openPopup}) => {
           <a 
             onClick={(e) => {
               e.preventDefault();
+              window.dataLayer = window.dataLayer || [];
+              window.dataLayer.push({
+                'event': 'click_cta',
+                'button_text': 'Розпочати навчання зараз',
+                'button_location': 'curriculum',
+                'page_path': window.location.pathname
+              });
               openPopup();
             }}
             href="#" 

@@ -144,6 +144,13 @@ const Hero = ({ toggleTheme, currentTheme, openPopup }) => { // Accept props
                         <a 
                           onClick={(e) => {
                             e.preventDefault();
+                            window.dataLayer = window.dataLayer || [];
+                            window.dataLayer.push({
+                              'event': 'click_cta',
+                              'button_text': e.target.innerText,
+                              'button_location': 'hero',
+                              'page_path': window.location.pathname
+                            });
                             openPopup();
                           }}
                           href="#" 
@@ -195,6 +202,13 @@ const Hero = ({ toggleTheme, currentTheme, openPopup }) => { // Accept props
          <a 
           onClick={(e) => {
             e.preventDefault();
+            window.dataLayer = window.dataLayer || [];
+            window.dataLayer.push({
+              'event': 'click_cta',
+              'button_text': e.target.innerText,
+              'button_location': 'sticky',
+              'page_path': window.location.pathname
+            });
             openPopup();
           }}
           href="#pricing" 
