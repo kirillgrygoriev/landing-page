@@ -77,7 +77,17 @@ const Testimonials = ({ openPopup }) => {
 
         <div className="mt-16 text-center" data-id="f9ihz0fex" data-path="components/Testimonials.js">
           <button 
-            onClick={openPopup}
+            onClick={(e) => {
+              window.dataLayer = window.dataLayer || [];
+              window.dataLayer.push({
+                'event': 'click_cta',
+                'button_text': 'Приєднуйся до них і зміни свій підіхід до роботи сьогодні',
+                'button_location': 'testimonials',
+                'page_path': window.location.pathname
+              });
+              openPopup();
+            }}
+             
             className="inline-flex items-center space-x-2 text-[var(--primary)] cursor-pointer hover:underline focus:outline-none transition-all duration-300"
           >
             <span className="text-lg font-medium">Приєднуйся до них і зміни свій підіхід до роботи сьогодні</span>
