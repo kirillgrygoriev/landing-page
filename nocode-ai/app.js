@@ -11,10 +11,6 @@ const App = () => {
     setIsPopupOpen(true);
     document.body.classList.add('popup-open');
 
-      
-    // Додаємо відладку
-    console.log("Відкриваю попап, зараз буде dataLayer.push");
-
     window.dataLayer = window.dataLayer || [];
     window.dataLayer.push({
       'event': 'popup_open'
@@ -29,8 +25,25 @@ const App = () => {
 
   const handlePopupSubmit = (formData) => {
     console.log('Form submitted:', formData);
+
+    // Додаємо код для відправки події в dataLayer
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({
+      'event': 'form_submit',
+      'email_domain': formData.email ? formData.email.split('@')[1] : 'unknown',
+      'has_phone': formData.phone ? 'yes' : 'no',
+      'form_location': 'popup',
+      'user_id': formData.email ? btoa(formData.email).replace(/=/g, '') : null
+    });
+    
+    // Встановлюємо cookie для відстеження конверсії
+    document.cookie = `user_email_hash=${btoa(formData.email).replace(/=/g, '')};path=/;max-age=2592000`; // 30 днів
+      
+    //Close the popup after timeout
     setTimeout(() => {
       closePopup();
+      // Перенаправлення на сторінку оплати
+      window.location.href = "https://secure.wayforpay.com/button/b5eb39568eae5";
     }, 1000);
   };
 
